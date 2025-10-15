@@ -55,7 +55,7 @@ export default function App() {
                   : "bg-white text-orange-700 hover:bg-blue-100"
               }`}
             >
-              RELOJ 11
+              RELOJ 1
             </button>
             <button
               type="button"
