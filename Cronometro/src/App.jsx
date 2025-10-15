@@ -22,7 +22,7 @@ export default function App() {
         <img
           src={logo2}
           alt="Logo Derecho"
-          className="w-[220px] sm:w-[320px] object-contain"
+          className="w-[300px] sm:w-[400px] object-contain"
         />
       </div>
 
@@ -30,16 +30,16 @@ export default function App() {
       <div className="flex flex-col md:flex-row items-center justify-center w-full h-full max-w-[1600px] mx-auto px-6 md:px-10 gap-6">
 
         {/* 📸 Imagen de alumnos + tira */}
-        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-90">
+        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-110">
           <img
             src={alumnos}
             alt="Alumnos"
-            className="w-[600px] h-auto object-contain pointer-events-none select-none"
+            className="w-[800px] h-auto object-contain pointer-events-none select-none"
           />
           <img
             src={tira}
             alt="Tira institucional"
-            className="w-[600px] h-auto object-cover pointer-events-none select-none absolute bottom-[40px] left-1/2 -translate-x-1/2"
+            className="w-[800px] h-auto object-cover pointer-events-none select-none absolute bottom-[0px] left-1/2 -translate-x-1/2"
           />
         </div>
 
@@ -50,7 +50,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => setRelojSeleccionado("Reloj 1")}
-              className={`px-6 py-3 rounded-xl text-xl font-extrabold shadow-md transition-all ${
+              className={`px-10 py-5 rounded-xl text-3xl font-extrabold shadow-md transition-all ${
                 relojSeleccionado === "Reloj 1"
                   ? "bg-yellow-400 text-white"
                   : "bg-white text-orange-700 hover:bg-blue-100"
@@ -61,7 +61,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => setRelojSeleccionado("Reloj 2")}
-              className={`px-6 py-3 rounded-xl text-xl font-extrabold shadow-md transition-all ${
+              className={`px-10 py-5 rounded-xl text-3xl font-extrabold shadow-md transition-all ${
                 relojSeleccionado === "Reloj 2"
                   ? "bg-yellow-400 text-white"
                   : "bg-white text-orange-700 hover:bg-blue-100"
