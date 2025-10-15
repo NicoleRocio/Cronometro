@@ -10,46 +10,47 @@ export default function App() {
   const key = relojSeleccionado + "-" + Math.random();
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col justify-center items-center bg-sky-800 overflow-hidden">
+    <div className="relative h-screen w-full bg-sky-800 overflow-hidden flex flex-col justify-center">
 
-      {/* 🔷 Logos superiores grandes y alineados — no capturan eventos */}
-      <div className="absolute top-2 w-full flex justify-between px-12 pointer-events-none">
+      {/* 🔷 Logos superiores */}
+      <div className="absolute top-0 left-0 w-full flex justify-between px-8 py-4 z-50">
         <img
           src={logo}
           alt="Logo Institución"
-          className="w-64 h-64 sm:w-72 sm:h-72 object-contain"
+          className="w-[200px] sm:w-[280px] object-contain"
         />
         <img
           src={logo2}
           alt="Logo Derecho"
-          className="w-64 h-64 sm:w-72 sm:h-72 object-contain"
+          className="w-[220px] sm:w-[320px] object-contain"
         />
       </div>
 
-      {/* 🔹 Contenedor principal */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-[1800px] p-10">
-        {/* 📸 Imagen de alumnos y tira institucional (no capturan eventos) */}
-        <div className="hidden md:flex flex-col justify-start items-center flex-1 mt-20 relative">
+      {/* 🔹 Contenedor principal (centrado verticalmente) */}
+      <div className="flex flex-col md:flex-row items-center justify-center w-full h-full max-w-[1600px] mx-auto px-6 md:px-10 gap-6">
+
+        {/* 📸 Imagen de alumnos + tira */}
+        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-90">
           <img
             src={alumnos}
             alt="Alumnos"
-            className="w-[850px] h-[850px] object-contain pointer-events-none select-none block"
+            className="w-[600px] h-auto object-contain pointer-events-none select-none"
           />
           <img
             src={tira}
             alt="Tira institucional"
-            className="w-[850px] h-auto object-cover pointer-events-none select-none absolute bottom-[-10px] left-1/2 -translate-x-1/2"
+            className="w-[600px] h-auto object-cover pointer-events-none select-none absolute bottom-[40px] left-1/2 -translate-x-1/2"
           />
         </div>
 
-        {/* 🕒 Zona del cronómetro — aseguramos que esté por encima (z-index) */}
-        <div className="flex flex-col items-center flex-1 md:ml-32 relative z-50">
-          {/* Botones para cambiar de reloj */}
-          <div className="flex gap-6 mb-10">
+        {/* 🕒 Zona del cronómetro */}
+        <div className="flex flex-col items-center flex-1 relative z-50 scale-90">
+          {/* Botones */}
+          <div className="flex gap-6 mb-8">
             <button
               type="button"
               onClick={() => setRelojSeleccionado("Reloj 1")}
-              className={`px-8 py-3 rounded-xl text-2xl font-extrabold shadow-md transition-all ${
+              className={`px-6 py-3 rounded-xl text-xl font-extrabold shadow-md transition-all ${
                 relojSeleccionado === "Reloj 1"
                   ? "bg-yellow-400 text-white"
                   : "bg-white text-orange-700 hover:bg-blue-100"
@@ -60,7 +61,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => setRelojSeleccionado("Reloj 2")}
-              className={`px-8 py-3 rounded-xl text-2xl font-extrabold shadow-md transition-all ${
+              className={`px-6 py-3 rounded-xl text-xl font-extrabold shadow-md transition-all ${
                 relojSeleccionado === "Reloj 2"
                   ? "bg-yellow-400 text-white"
                   : "bg-white text-orange-700 hover:bg-blue-100"
@@ -70,26 +71,28 @@ export default function App() {
             </button>
           </div>
 
-          {/* Mostrar el cronómetro correspondiente */}
-          {relojSeleccionado === "Reloj 1" && (
-            <Cronometro
-              key={key}
-              nombre="Reloj 1"
-              minutosMax={1}
-              segundosMax={1}
-              alertas={[4]}
-            />
-          )}
+          {/* Cronómetro */}
+          <div className="flex justify-center items-center">
+            {relojSeleccionado === "Reloj 1" && (
+              <Cronometro
+                key={key}
+                nombre="Reloj 1"
+                minutosMax={1}
+                segundosMax={1}
+                alertas={[4]}
+              />
+            )}
 
-          {relojSeleccionado === "Reloj 2" && (
-            <Cronometro
-              key={key}
-              nombre="Reloj 2"
-              minutosMax={0}
-              segundosMax={3}
-              alertas={[2]}
-            />
-          )}
+            {relojSeleccionado === "Reloj 2" && (
+              <Cronometro
+                key={key}
+                nombre="Reloj 2"
+                minutosMax={0}
+                segundosMax={3}
+                alertas={[2]}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
