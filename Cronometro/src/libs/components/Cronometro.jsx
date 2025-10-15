@@ -73,57 +73,62 @@ export default function Cronometro({ nombre, minutosMax = 0, segundosMax = 0, al
       
       {/* 🕒 Contenedor principal del cronómetro con curva inferior derecha */}
       <div
-        className="backdrop-blur-md p-8 shadow-2xl w-full max-w-4xl flex flex-col justify-center items-center space-y-4 overflow-hidden"
+        className="backdrop-blur-md p-10 shadow-2xl w-full max-w-5xl flex flex-col justify-center items-center space-y-4 overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #f3a108ff, #ffee04ff)",
+          background: "white",
           borderRadius: "0 0 150px 0",
         }}
       >
         {/* 🔹 Texto superior dentro del cronómetro */}
-        <h1 className="text-3xl font-extrabold text-white text-center tracking-widest drop-shadow-lg">
+        <h1 className="text-3xl font-extrabold text-black text-center tracking-widest drop-shadow-lg">
           ZÁRATE VERÁSTEGUI <span className="text-sky-300">| EDUCATION</span>
         </h1>
 
         {/* ⏱ Tiempo */}
-        <div className="text-[8rem] sm:text-[10rem] font-mono font-extrabold text-white drop-shadow-xl tracking-widest">
+        <div className="text-[10rem] sm:text-[12rem] font-mono font-extrabold text-black drop-shadow-xl tracking-widest">
           {formatTiempo(tiempo)}
         </div>
       </div>
 
       {/* ⚙️ Contenedor de mensajes y botones con curva superior izquierda */}
       <div
-        className="bg-white/10 backdrop-blur-sm p-8 shadow-lg w-full max-w-4xl flex flex-col items-center justify-between space-y-8 overflow-hidden"
+        className="bg-white/10 backdrop-blur-sm p-10 shadow-lg w-full max-w-5xl flex flex-col items-center justify-between space-y-8 overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #e45f12ff, #c95a10c5)",
+          background: "white",
           borderRadius: "150px 0 0 0",
           minHeight: "350px", // 🔹 Mantiene el tamaño estable del fondo
           transition: "all 0.3s ease-in-out",
         }}
       >
         {/* 🟧 Mensajes individuales */}
-        <div className="flex flex-wrap justify-center items-center gap-6 min-h-[150px]">
+        <div className="flex flex-row justify-center items-center gap-8 flex-nowrap min-h-[180px] overflow-x-auto w-full px-4">
+
           {mostroMaximo && (
             <>
               {/* Tiempo máximo */}
-              <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-white text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
-                <span className="text-white font-extrabold"> TIEMPO MÁXIMO</span>
-                <span>{formatTiempo(tiempoMax)}</span>
+              <div className="bg-gray-300 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-black text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
+                <span className="text-black font-extrabold "> TIEMPO MÁXIMO</span>
+                <span className="text-5xl" >{formatTiempo(tiempoMax)}</span>
               </div>
 
               {/* Tiempo total */}
               {pausado && (
-                <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-white text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
-                  <span className="text-white font-extrabold"> TIEMPO TOTAL</span>
-                  <span>{formatTiempo(tiempo)}</span>
+                <div className="bg-gray-300 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-black text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
+                  <span className="text-black font-extrabold"> TIEMPO TOTAL</span>
+                  <span className="text-5xl">{formatTiempo(tiempo)}</span>
                 </div>
               )}
 
               {/* Diferencia */}
               {pausado && (
-                <div className="bg-white/20 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-white text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
-                  <span className="text-white font-extrabold"> DIFERENCIA</span>
-                  <span
-                    className={`${diferencia > 0 ? "text-white" : "text-green-300"}`}
+                <div className="bg-gray-300 backdrop-blur-md rounded-xl px-4 py-8 shadow-inner text-white text-4xl font-semibold drop-shadow-md flex flex-col items-center min-w-[220px]">
+                  <span className="text-black font-extrabold"> DIFERENCIA</span>
+                  <span 
+
+
+
+
+                    className={`${diferencia > 0 ? "text-black" : "text-green-300"}`} 
                   >
                     {diferenciaTexto}
                   </span>
