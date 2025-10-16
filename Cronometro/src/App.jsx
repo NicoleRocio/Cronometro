@@ -30,16 +30,16 @@ export default function App() {
       <div className="flex flex-col md:flex-row items-center justify-center w-full h-full max-w-[1600px] mx-auto px-6 md:px-10 gap-6">
 
         {/* 📸 Imagen de alumnos + tira */}
-        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-110">
+        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-125">
           <img
             src={alumnos}
             alt="Alumnos"
-            className="w-[800px] h-auto object-contain pointer-events-none select-none"
+            className="w-[1200px] h-auto object-contain pointer-events-none select-none"
           />
           <img
             src={tira}
             alt="Tira institucional"
-            className="w-[800px] h-auto object-cover pointer-events-none select-none absolute bottom-[0px] left-1/2 -translate-x-1/2"
+            className="w-[1200px] h-auto object-cover pointer-events-none select-none absolute bottom-[0px] left-1/2 -translate-x-1/2"
           />
         </div>
 
