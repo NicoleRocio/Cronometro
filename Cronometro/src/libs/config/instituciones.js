@@ -2,7 +2,7 @@
 export const instituciones = [
   {
     id: "institucion1",
-    nombre: "Cientifica",
+    nombre: "Zarate",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
     alumnos: "/src/assets/alumnos.png",
@@ -42,7 +42,7 @@ export const instituciones = [
   },
   {
     id: "institucion1",
-    nombre: "Cientifica",
+    nombre: "Zarate",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
     alumnos: "/src/assets/alumnos.png",
@@ -82,7 +82,7 @@ export const instituciones = [
   },
   {
     id: "institucion1",
-    nombre: "Cientifica",
+    nombre: "Zarate",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
     alumnos: "/src/assets/alumnos.png",
@@ -122,7 +122,7 @@ export const instituciones = [
   },
   {
     id: "institucion1",
-    nombre: "Cientifica",
+    nombre: "Zarate",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
     alumnos: "/src/assets/alumnos.png",
