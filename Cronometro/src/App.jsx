@@ -22,7 +22,7 @@ export default function App() {
         {/* 📸 Imagen de alumnos + tira */}
 
         <AlumnosImage institucion={institucionSeleccionada} />
- fix-correction-timer
+
 
         {/* 🕒 Zona del cronómetro */}
         <div className="flex flex-col items-center flex-1 relative z-50 scale-90">
