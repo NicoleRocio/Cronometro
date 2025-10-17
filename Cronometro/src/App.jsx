@@ -1,47 +1,28 @@
 import { useState } from "react";
 import Cronometro from "./libs/components/Cronometro";
-import logo from "./assets/logo.png";
-import logo2 from "./assets/logo2.png";
-import alumnos from "./assets/alumnos.png";
-import tira from "./assets/tira.png";
+import HeaderLogos from "./libs/components/HeaderLogos";
+import AlumnosImage from "./libs/components/AlumnosImage";
+import InstitucionSelector from "./libs/components/InstitucionSelector";
+import { getInstitucionById } from "./libs/config/instituciones";
 
 export default function App() {
   const [relojSeleccionado, setRelojSeleccionado] = useState("Reloj 1");
+  const [institucionSeleccionada, setInstitucionSeleccionada] = useState(getInstitucionById("institucion1"));
   const key = relojSeleccionado + "-" + Math.random();
 
   return (
-    <div className="relative h-screen w-full bg-sky-800 overflow-hidden flex flex-col justify-center">
+    <div className={`relative h-screen w-full ${institucionSeleccionada.colorFondo} overflow-hidden flex flex-col justify-center`}>
 
       {/* 🔷 Logos superiores */}
-      <div className="absolute top-0 left-0 w-full flex justify-between px-8 py-4 z-50">
-        <img
-          src={logo}
-          alt="Logo Institución"
-          className="w-[200px] sm:w-[280px] object-contain"
-        />
-        <img
-          src={logo2}
-          alt="Logo Derecho"
-          className="w-[300px] sm:w-[400px] object-contain"
-        />
-      </div>
+      <HeaderLogos institucion={institucionSeleccionada} />
 
       {/* 🔹 Contenedor principal (centrado verticalmente) */}
       <div className="flex flex-col md:flex-row items-center justify-center w-full h-full max-w-[1600px] mx-auto px-6 md:px-10 gap-6">
 
         {/* 📸 Imagen de alumnos + tira */}
-        <div className="hidden md:flex flex-col items-center justify-center flex-1 relative scale-125">
-          <img
-            src={alumnos}
-            alt="Alumnos"
-            className="w-[1200px] h-auto object-contain pointer-events-none select-none"
-          />
-          <img
-            src={tira}
-            alt="Tira institucional"
-            className="w-[1200px] h-auto object-cover pointer-events-none select-none absolute bottom-[0px] left-1/2 -translate-x-1/2"
-          />
-        </div>
+
+        <AlumnosImage institucion={institucionSeleccionada} />
+ fix-correction-timer
 
         {/* 🕒 Zona del cronómetro */}
         <div className="flex flex-col items-center flex-1 relative z-50 scale-90">
@@ -95,6 +76,12 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {/* 🏫 Selector de institución - Parte inferior izquierda */}
+      <InstitucionSelector 
+        institucionSeleccionada={institucionSeleccionada}
+        onInstitucionChange={setInstitucionSeleccionada}
+      />
     </div>
   );
 }
