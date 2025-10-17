@@ -2,164 +2,141 @@
 export const instituciones = [
   {
     id: "institucion1",
-    nombre: "Zarate",
+    nombre: "ZÁRATE",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-sky-800"
+    alumnos: "/src/assets/logo.png",
+    colorFondo: "bg-sky-900"
   },
   {
     id: "institucion2", 
-    nombre: "Institución 2",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-blue-900"
+    nombre: "HEROINAS TOLEDO",
+    logo: "/src/assets/logo.png",
+    logo2: "/src/assets/logo2.png",
+    alumnos: "/src/assets/Heroinas.png",
+    colorFondo: "bg-sky-900"
   },
   {
     id: "institucion3",
-    nombre: "Institución 3", 
+    nombre: "EL TRIUNFO", 
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-indigo-900"
+    alumnos: "/src/assets/triunfo.png",
+    colorFondo: "bg-sky-900"
   },
   {
     id: "institucion4",
-    nombre: "Institución 4",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-purple-900"
+    nombre: "ALBERTH EINSTEIN",
+    logo: "/src/assets/logo.png",
+    logo2: "/src/assets/logo2.png",
+    alumnos: "/src/assets/alberth.png",
+    colorFondo: "bg-sky-900"
   },
   {
     id: "institucion5",
-    nombre: "Institución 5",
+    nombre: "GELICICH",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-green-900"
+    alumnos: "/src/assets/GELICICH.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion1",
-    nombre: "Zarate",
+    id: "Ninstitucion6",
+    nombre: "NUESTRA SEÑORA DEL PILAR",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-sky-800"
+    alumnos: "/src/assets/NUESTRA SEÑORA DEL PILAR.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion2", 
-    nombre: "Institución 2",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-blue-900"
-  },
-  {
-    id: "institucion3",
-    nombre: "Institución 3", 
+    id: "institucion7", 
+    nombre: "UNI",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-indigo-900"
+    alumnos: "/src/assets/UNI.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion4",
-    nombre: "Institución 4",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-purple-900"
-  },
-  {
-    id: "institucion5",
-    nombre: "Institución 5",
+    id: "institucion8",
+    nombre: "ROSA DE LIMA", 
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-green-900"
+    alumnos: "/src/assets/ROSA DE LIMA.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion1",
-    nombre: "Zarate",
+    id: "institucion9",
+    nombre: "LOS ALAMOS",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-sky-800"
+    alumnos: "/src/assets/LOS ALAMOS.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion2", 
-    nombre: "Institución 2",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-blue-900"
-  },
-  {
-    id: "institucion3",
-    nombre: "Institución 3", 
+    id: "institucion10",
+    nombre: "SAN GABRIEL",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-indigo-900"
+    alumnos: "/src/assets/SAN GABRIEL.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion4",
-    nombre: "Institución 4",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-purple-900"
-  },
-  {
-    id: "institucion5",
-    nombre: "Institución 5",
+    id: "institucion11",
+    nombre: "SANTA ANA",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-green-900"
+    alumnos: "/src/assets/SANTA ANA.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion1",
-    nombre: "Zarate",
+    id: "institucion12", 
+    nombre: "EXCELENTI",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-sky-800"
+    alumnos: "/src/assets/EXCELENTI.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion2", 
-    nombre: "Institución 2",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-blue-900"
-  },
-  {
-    id: "institucion3",
-    nombre: "Institución 3", 
+    id: "institucion13",
+    nombre: "NUESTRA SEÑORA DE LOURDES", 
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-indigo-900"
+    alumnos: "/src/assets/NUESTRA SEÑORA DE LOURDES.png",
+    colorFondo: "bg-sky-900"
   },
   {
-    id: "institucion4",
-    nombre: "Institución 4",
-    logo: "/src/assets/logo2.png",
-    logo2: "/src/assets/logo.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-purple-900"
-  },
-  {
-    id: "institucion5",
-    nombre: "Institución 5",
+    id: "institucion14",
+    nombre: "J. ALARCO DE DAMMERT",
     logo: "/src/assets/logo.png",
     logo2: "/src/assets/logo2.png",
-    alumnos: "/src/assets/alumnos.png",
-    colorFondo: "bg-green-900"
-  }
+    alumnos: "/src/assets/unnamed.png",
+    colorFondo: "bg-sky-900"
+  },
+  {
+    id: "institucion15",
+    nombre: "VIRGEN DE FATIMA",
+    logo: "/src/assets/logo.png",
+    logo2: "/src/assets/logo2.png",
+    alumnos: "/src/assets/VIRGEN DE FATIMA.png",
+    colorFondo: "bg-sky-900"
+  },
+  {
+    id: "institucion16",
+    nombre: "VICTOR PORCEL ESQUIVEL",
+    logo: "/src/assets/logo.png",
+    logo2: "/src/assets/logo2.png",
+    alumnos: "/src/assets/VICTOR PORCEL ESQUIVEL.png",
+    colorFondo: "bg-sky-900"
+  },
+  {
+    id: "institucion17", 
+    nombre: "SAN JOSE LA ESPERANZA",
+    logo: "/src/assets/logo.png",
+    logo2: "/src/assets/logo2.png",
+    alumnos: "/src/assets/SAN JOSE LA ESPERANZA.png",
+    colorFondo: "bg-sky-900"
+  },
+  
 ];
 
 export const getInstitucionById = (id) => {

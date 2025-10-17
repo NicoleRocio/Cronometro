@@ -8,11 +8,11 @@ const AlumnosImage = ({ institucion }) => {
         alt="Alumnos"
         className="w-[1200px] h-auto object-contain pointer-events-none select-none"
       />
-      <img
+     {/* <img
         src={tira}
         alt="Tira institucional"
         className="w-[1200px] h-auto object-cover pointer-events-none select-none absolute bottom-[0px] left-1/2 -translate-x-1/2"
-      />
+      />*/}
     </div>
   );
 };
